@@ -1,0 +1,144 @@
+<?php
+include('configs/config_sql.php');
+include('configs/anti_inject.php');
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lineage ][ Fulano</title>
+<meta name="keywords" content="shoes store, free template, ecommerce, online shop, website templates, CSS, HTML" />
+<meta name="description" content="Shoes Store is a free ecommerce template provided by templatemo.com" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "top_nav", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+</head>
+
+<body>
+
+<div id="templatemo_body_wrapper">
+<div id="templatemo_wrapper">
+
+	<div id="">
+    	<div id="site_title">
+    	  <h1><a href="#">.</a></h1></div>
+        <div id="header_right">
+          <p>&nbsp;</p>
+        </div>
+        <p>&nbsp;</p>
+        <div class="cleaner"></div>
+    </div> <!-- END of templatemo_header -->
+    
+    <div id="templatemo_menubar">
+    	<div id="top_nav" class="ddsmoothmenu">
+            <ul>
+                <li><a href="index.php" class="selected">Home</a></li>
+                <li><a href="cadastro/index.php">Cadastro</a>
+                </li>
+                <li><a href="downloads.php">Downloads</a>
+                </li>
+                <li><a href="top_kills/index.php">Rankings</a></li>
+                <li><a href="doacoes.php">Doacoes</a></li>
+                <li><a href="votesystem/index.php">Vote System</a></li>
+                <li><a href="acc/index.php">Painel Account</a></li>
+                <li><a href="informacoes.php">Informacoes</a></li>
+            </ul>
+            <br style="clear: left" />
+      </div> <!-- end of ddsmoothmenu --></div> <!-- END of templatemo_menubar -->
+    
+    <div id="templatemo_main">
+   	  <div id="sidebar" class="float_l">
+       	<div class="sidebar_box"><span class="bottom"></span>
+            	<h3>Informacoes</h3>   
+                <div class="content"> 
+                	<ul class="sidebar_list">
+                	  <li><a href="#">Rates : 1000x</a></li>
+                        <li><a href="#">Safe : +10</a></li>
+                        <li><a href="#">Safe Maximo +30</a></li>
+                        <li><a href="#">Chance Scroll : 50%</a></li>
+                        <li><a href="#">Chance Blessed : 80%</a></li>
+                        <li><a href="#">Chance Crystal : 100%</a></li>
+                        <li><a href="#">Servidor : Interlude</a></li>
+                        <li><a href="#">Armor Top : TT 4 Partes</a></li>
+                        <li><a href="#">Weapon Top : Vesper Black</a></li>
+                	</ul>
+                </div>
+          </div>
+    	</div>
+        <div id="content" class="float_r"><script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+          <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+          <script type="text/javascript">
+            $(window).load(function() {
+                $('#slider').nivoSlider();
+            });
+            </script>
+       	  <h1>Welcome To Lineage ][ Fulano !</h1>
+       	  <div class="cleaner">
+       	    <p>Ola aventureiro, Nosso servidor se encontra online com bastante players onlines, mais de 200 Ativos...</p>
+       	    <p>Traga seu clan lvl 5 com mais de 10 players e ganhe itens... Pois ajudenos votando no nosso servidor para que nosso servidor cresça... Ajudem doando para que o servidor nao presise dar wipe, pois nao se esqueça doando voce sempre ganhara alguma coisa... </p>
+       	    <p>Nossa versao se encontra como interlude, ussamos a revisao l2jfrozen, encontrada bem balanceada, sem bugs, venha conferir nosso servidor...</p>
+       	    <p>Esperamos voce, Nao ajudamos, Easy farm, tenha seus itens em&nbsp;menos de 20 minutos..</p>
+       	    <p>&nbsp;</p>
+       	    <p>Zonas drops se encontrao em Gludin Village, Toi 13... Zona PvP Se encontra en Primeval	isle wharf !</p>
+       	    <p>Colocados os drops, Bead ornament e star ornament...</p>
+       	    <p>Bem vindo Ao L2Fulano, Divirta-se No melhor lineage2 da historia !</p>
+       	  </div>
+      </div> 
+        <div class="cleaner">
+          <div align="left">
+            <!-- Server Status //--><b><font size="1" face="Verdana">Login Server</font></b></span> :
+            <?php
+$fp = @fsockopen("192.168.1.35", 2106, $errno, $errstr, 1);
+if($fp >= 1){
+echo '<img src="images/on.gif" width="50" height="5" hspace="0" vspace="0">';}
+else{ echo '<img src="images/off.png" width="50" height="5" hspace="0" vspace="0">'; }
+?>
+            <br>
+  <b><font size="1" face="Verdana">Game Server</font></b> : <?php
+$fp = @fsockopen("192.168.1.35", 7777, $errno, $errstr, 1);
+if($fp >= 1){
+echo '<img src="images/on.gif" width="50" height="5" hspace="0" vspace="0">';}
+else{ echo '<img src="images/off.png" width="50" height="5" hspace="0" vspace="0">'; }
+?>
+  <!-- End Server Status //-->
+          </div>
+        </div>
+    </div> <!-- END of templatemo_main -->
+    
+    <div id="templatemo_footer">
+    	<p>Ajudenos Votando no servidor :</p>
+    	<p><a href="votesystem/index.php"><img src="images/logo_votesystem.png" width="500" height="120" /></a></p>
+    	Lineage ][ Fulano, Todos os creditos reservados a crisfoda !
+    </div> <!-- END of templatemo_footer -->
+    
+</div> <!-- END of templatemo_wrapper -->
+</div> <!-- END of templatemo_body_wrapper -->
+
+</body>
+</html>
